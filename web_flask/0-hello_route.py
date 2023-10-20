@@ -1,13 +1,10 @@
 #!/usr/bin/python3
-"""A Simple Flask Web Application
+"""Starts a Flask web application.
 
-This Flask application serves a single page with a greeting message.
 The application listens on 0.0.0.0, port 5000.
-
 Routes:
-    /: Displays a friendly 'Hello HBNB!' message.
+    /: Displays 'Hello HBNB!'
 """
-
 from flask import Flask
 
 app = Flask(__name__)
@@ -15,7 +12,7 @@ app = Flask(__name__)
 
 @app.route("/", strict_slashes=False)
 def hello_hbnb():
-    """Displays a friendly 'Hello HBNB!' message"""
+    """Displays 'Hello HBNB!'"""
     return "Hello HBNB!"
 
 
